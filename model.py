@@ -44,7 +44,7 @@ class Net(nn.Module):
 net=Net()
 
 # 訓練済みパラメータの読み込みと設定
-net.load_atate_dict(torch.load("model_cnn.pth",map_location=torch.device("cpu")))
+net.load_state_dict(torch.load("model_cnn.pth",map_location=torch.device("cpu")))
 
 def predict(img):
   # モデルへの入力
