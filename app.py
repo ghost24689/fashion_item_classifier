@@ -1,7 +1,7 @@
 # 以下を「app.py」に書き込み
 import streamlit as st
 import matplotlib.pyplot as plt
-from PIL import image
+from PIL import Image
 from model import predict
 
 st.set_option("deprecation.showfileUploaderEncoding",False)
