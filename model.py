@@ -39,7 +39,7 @@ class Net(nn.Module):
     x=F.relu(self.fc1(x))
     x=self.dropout(x)
     x=self.fc2(x)
-    return X
+    return x
 
 net=Net()
 
