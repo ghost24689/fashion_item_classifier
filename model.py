@@ -22,7 +22,7 @@ class Net(nn.Module):
     self.bn2=nn.BatchNorm2d(64)
 
     self.pool=nn.MaxPool2d(2,2)
-    self.relu=nn.ReLU
+    self.relu=nn.ReLU()
 
     self.fc1=nn.Linear(64*4*4,256)
     self.dropout=nn.Dropout(p=0.5)
